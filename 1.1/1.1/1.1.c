@@ -4,7 +4,18 @@
 #include <time.h>
 
 int main() {
-    int mass[10] = { 0 };
+    int size;
+
+    printf("Enter size of array: ");
+    scanf_s("%d", &size);
+
+    int* array = (int*)malloc(size * sizeof(int));
+
+    if (array == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+
     int max = INT_MIN;
     int min = INT_MAX;
 
@@ -12,22 +23,23 @@ int main() {
 
     printf("mass: ");
 
-    for (int i = 0; i < 10; i++) {
-        mass[i] = rand() % 150 - 75;
-        printf("%d ", mass[i]);
+    for (int i = 0; i < size; i++) {
+        array[i] = rand() % 150 - 75;
+        printf("%d ", array[i]);
     }
     printf("\n");
 
-    for (int i = 0; i < 10; i++) {
-        if (mass[i] < min) {
-            min = mass[i];
+    for (int i = 0; i < size; i++) {
+        if (array[i] < min) {
+            min = array[i];
         }
-        if (mass[i] > max) {
-            max = mass[i];
+        if (array[i] > max) {
+            max = array[i];
         }
     }
 
     printf("max: %d min: %d\n", max, min);
 
+    free(array);
     return 0;
 }
