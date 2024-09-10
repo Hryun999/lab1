@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9BA7C589-0406-4CF4-9702-B81DD4C96D52}|1.1\\1.1.vcxproj|C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\1.1\\1.1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9BA7C589-0406-4CF4-9702-B81DD4C96D52}|1.1\\1.1.vcxproj|solutionrelative:1.1\\1.1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1.1.c",
+              "DocumentMoniker": "C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\1.1\\1.1.c",
+              "RelativeDocumentMoniker": "1.1\\1.1.c",
+              "ToolTip": "C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\1.1\\1.1.c",
+              "RelativeToolTip": "1.1\\1.1.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-09-10T11:20:31.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
