@@ -1,3 +1,2 @@
 ﻿  1.1.c
-C:\Users\ilahb\Desktop\lab1\1.1\1.1\1.1.c(22,11): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
   1.1.vcxproj -> C:\Users\ilahb\Desktop\lab1\1.1\x64\Debug\1.1.exe

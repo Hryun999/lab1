@@ -1,64 +1,37 @@
 ﻿#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <time.h>
+#include <string.h>
+
+typedef struct {
+    char lastName[50];
+    char firstName[50];
+    int age;
+    int studentID;
+} Student;
+
+void findStudent(Student students[], int size, const char* lastName, const char* firstName) {
+    for (int i = 0; i < size; i++) {
+        if (strcmp(students[i].lastName, lastName) == 0 && strcmp(students[i].firstName, firstName) == 0) {
+            printf("Student found:\n");
+            printf("Last Name: %s\n", students[i].lastName);
+            printf("First Name: %s\n", students[i].firstName);
+            printf("Age: %d\n", students[i].age);
+            printf("Student ID: %d\n", students[i].studentID);
+            return;
+        }
+    }
+    printf("Student not found\n");
+}
 
 int main() {
-    int rows, columns;
+    Student students[] = {
+        {"Habarov", "Ilya", 20, 1001},
+        {"Vasykina", "Diana", 22, 1002},
+        {"Durov", "Pavel", 21, 1003}
+    };
 
-    printf("Enter the number of rows: ");
-    scanf_s("%d", &rows);
-    printf("Enter the number of columns: ");
-    scanf_s("%d", &columns);
+    int size = sizeof(students) / sizeof(students[0]);
 
-    int** array = (int**)malloc(rows * sizeof(int*));
-    for (int i = 0; i < rows; i++) {
-        array[i] = (int*)malloc(columns * sizeof(int));
-    }
-
-    int max = INT_MIN;
-    int min = INT_MAX;
-
-    srand(time(NULL));
-
-    printf("mass:\n");
-    for (int i = 0; i < rows; i++) {
-        for (int j = 0; j < columns; j++) {
-            array[i][j] = rand() % 150 - 75;
-            printf("%d ", array[i][j]);
-
-            if (array[i][j] < min) {
-                min = array[i][j];
-            }
-            if (array[i][j] > max) {
-                max = array[i][j];
-            }
-        }
-        printf("\n");
-    }
-
-    printf("max: %d min: %d\n", max, min);
-
-    for (int i = 0; i < rows; i++) {
-        int rowSum = 0;
-        for (int j = 0; j < columns; j++) {
-            rowSum += array[i][j];
-        }
-        printf("rowSum: %d\n", rowSum);
-    }
-
-    for (int j = 0; j < columns; j++) {
-        int columnSum = 0;
-        for (int i = 0; i < rows; i++) {
-            columnSum += array[i][j];
-        }
-        printf("columnSum: %d\n", columnSum);
-    }
-
-    for (int i = 0; i < rows; ++i) {
-        free(array[i]);
-    }
-    free(array);
+    findStudent(students, size, "Doe", "Jane");
 
     return 0;
 }
