@@ -8,9 +8,9 @@ typedef struct {
     int studentID;
 } Student;
 
-void findStudent(Student students[], int size, const char* lastName, const char* firstName) {
+void findStudent(Student students[], int size, const char* lastName, const char* firstName, int studentID) {
     for (int i = 0; i < size; i++) {
-        if (strcmp(students[i].lastName, lastName) == 0 && strcmp(students[i].firstName, firstName) == 0) {
+        if (strcmp(students[i].lastName, lastName) == 0 && strcmp(students[i].firstName, firstName) == 0 || students[i].studentID==studentID) {
             printf("Student found:\n");
             printf("Last Name: %s\n", students[i].lastName);
             printf("First Name: %s\n", students[i].firstName);
@@ -31,7 +31,8 @@ int main() {
 
     int size = sizeof(students) / sizeof(students[0]);
 
-    findStudent(students, size, "Doe", "Jane");
+    
+    findStudent(students, size, "Habarov", "Ilya", 1001);
 
     return 0;
 }

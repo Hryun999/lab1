@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\",
+  "WorkspaceRootPath": "C:\\Users\\ilahb\\Downloads\\lab1\\1.1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BA7C589-0406-4CF4-9702-B81DD4C96D52}|1.1\\1.1.vcxproj|C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\1.1\\1.1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{9BA7C589-0406-4CF4-9702-B81DD4C96D52}|1.1\\1.1.vcxproj|C:\\Users\\ilahb\\Downloads\\lab1\\1.1\\1.1\\1.1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9BA7C589-0406-4CF4-9702-B81DD4C96D52}|1.1\\1.1.vcxproj|solutionrelative:1.1\\1.1.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "1.1.c",
-              "DocumentMoniker": "C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\1.1\\1.1.c",
+              "DocumentMoniker": "C:\\Users\\ilahb\\Downloads\\lab1\\1.1\\1.1\\1.1.c",
               "RelativeDocumentMoniker": "1.1\\1.1.c",
-              "ToolTip": "C:\\Users\\ilahb\\Desktop\\lab1\\1.1\\1.1\\1.1.c",
+              "ToolTip": "C:\\Users\\ilahb\\Downloads\\lab1\\1.1\\1.1\\1.1.c",
               "RelativeToolTip": "1.1\\1.1.c",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAiwCUAAAAAAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-09-10T11:20:31.278Z",
               "EditorCaption": ""
